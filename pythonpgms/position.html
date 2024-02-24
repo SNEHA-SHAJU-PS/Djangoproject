@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body
+        {
+        background-color:blue;
+        background-image:url("teena.jpg");
+        background-repeat:no-repeat ;
+        background-position:center;/*top left,top ryt,bottom left,bottom ryt*/
+        background-attachment:fixed;
+        }
+
+        #parent
+
+        {
+        position:relative;
+        border:2px solid red;
+        height:200px;
+        width:400px;
+        }
+        #child
+        {
+        border:2px solid blue;
+        height:100px;
+        width:200px;
+        position:absolute;
+        top:100px;
+        right:10px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="child">
+        hello
+    </div>
+</div>
+</body>
+</html>

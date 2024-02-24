@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function msg(n){
+         var s=document.getElementsByTagName('h1');
+        for(i=0;i<=s.length;i++){
+        s[i].style.color=n;
+        }}
+        function msg1(n){
+        var s=document.getElementsByTagName('p');
+
+        for(i=0;i<=s.length;i++){
+        s[i].style.color=n;
+        }
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+<h1 >My Heading</h1>
+
+<button onclick="msg('red')">Red</button>
+<button onclick="msg('green')">Green</button>
+<button onclick="msg('blue')">Blue</button>
+
+
+<p>Para1</p>
+<p>Para2</p>
+<p>Para3</p>
+<p>Para4</p>
+<button onclick="msg1('purple')">Purple</button>
+
+<button onclick="msg1('orange')">Orange</button>
+<button onclick="msg1('yellow')">Yellow</button>
+</body>
+</html>

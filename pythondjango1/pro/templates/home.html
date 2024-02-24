@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/a.js' %}"></script>
+</head>
+<body style="background-image:url('{% static "images/a.jpg" %}');background-size:cover">
+
+<h1>welcome to my home page</h1>
+<h2>name is {{name}}</h2>
+<p>age is {{age}}</p>
+<!--<img src="{% static 'images/a.jpg' %}" height="500px" width="100%">-->
+</body>
+</html>

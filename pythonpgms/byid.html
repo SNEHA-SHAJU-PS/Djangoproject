@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function getprice()
+    {
+    var fruit=document.getElementById('f').value;
+    switch(fruit)
+    {
+    case 'banana':
+             price=80;
+             break;
+    case 'orange':
+              price=90;
+              break;
+    case 'apple':
+            price=100;
+            break;
+    case 'pineapple':
+             price=70;
+             break;
+    default:
+            price="Invalid"
+            break;
+    }
+    document.getElementById('a').value=price;
+    }
+  </script>
+</head>
+<body>
+<center>
+    <div style="background-color:pink;height:500px;width:650px;margin:20px;padding:100px;">
+       <select id="f">
+         <option value="banana">BANANA</option>
+         <option value="orange">ORANGE</option>
+         <option value="apple">APPLE</option>
+         <option value="pineapple">PINEAPPLE</option>
+       </select>
+        <br>
+        <input type="button" onclick="getprice()" value="Price">
+      <input type="text" id="a">
+
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1 id="h1">my heading</h1>
+<button id="b">CLICK</button>
+<script>
+        var h=document.getElementById('h1');
+        var btn=document.getElementById('b');
+        h.addEventListener("mouseover",g);
+        btn.addEventListener('click',f);
+        function f()
+        {
+        h.style.color="red";
+        }
+        function g()
+        {
+        document.body.style.background="yellow";
+        }
+    </script>
+
+</body>
+</html>

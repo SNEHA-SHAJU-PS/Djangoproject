@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<h3>welcome to home page {% if user.is_authenticated %}<p><b>{{user.username}}</b></p>
+{% endif %} </h3>
+{% endblock %}
+

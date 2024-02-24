@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function createelement()
+    {
+    window.h=document.createElement('h1');//used global window for access all one's
+    h.innerHTML="my heading";
+    document.body.appendCmhild(h);
+    }
+    function removeelement(){
+    h.remove();
+    }
+    </script>
+
+</head>
+<body>
+<button onclick="createelement()">Create</button>
+
+<button onclick="removeelement()">Remove</button>
+
+</body>
+</html>

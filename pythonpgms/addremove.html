@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        <<style>
+        .class1
+        {
+        .class2
+        {
+        color:red;
+        font-size:40px;
+        }
+        .class3
+        {
+
+        </style>
+
+
+    </script>
+    function addclass()
+    {
+    document.getElementById('h').classList.add("class2");
+    }
+    function removeclass()
+    {
+    document.getElementById('h').classList.remove("class2");
+    }
+    function toggleclass()
+    {
+    document.getElementById('h').classList.toggle("class2");
+    }
+
+</head>
+<body>
+<h1 id="h1" class="class1">my heading</h1>
+<p id="p">paragraph</p>
+<br>
+<br>
+<button onclick="addclass()">addclass</button>
+<button onclick="removeclass()">removeclass</button>
+<button onclick="toggleclass()">toggleclass</button>
+
+</body>
+</html>

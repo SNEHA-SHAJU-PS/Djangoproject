@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function f(){
+        var s=document.getElementsByName('n');
+        document.getElementById('p').innerHTML=s[0].value;}
+    </script>
+</head>
+<body>
+<input type="text" name="n">
+
+<input type="text" name="n">
+<br>
+
+<button onclick="f()">Click</button>
+<br>
+<p id="p"></p>
+
+
+</body>
+</html>

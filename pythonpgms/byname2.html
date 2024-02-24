@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+         function f(){
+        var s=document.getElementsByTagName('p');
+        //s[1].style.textalign="center";
+        s[1].style.color="red";
+        for(i=0;i<s.length;i++){
+        s[i].style.color="red";
+        }
+        }
+        function g(){
+        var s=document.getElementsByClassName('class1');
+        for(i=0;i<s.length;i++){
+        s[i].style.background="yellow";
+        }
+        }
+
+
+    </script>
+</head>
+<body>
+<h1 class="class1">myheading1</h1>
+<h1>my heading</h1>
+<p>paragraph1</p>
+<p>paragraph2</p>
+<p class="class1">paragraph3</p>
+<button onclick="f()">changecolor</button>
+<button onclick="g()">changebacground</button>
+
+
+</body>
+</html>

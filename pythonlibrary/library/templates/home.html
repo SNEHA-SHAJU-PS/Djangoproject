@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+<center>
+<h3 class="mt-4">welcome to my home page</h3>
+{% if user.is_authenticated %}
+<p>{{user.username}}</p>
+{% else %}
+<p>Guest</p>
+{% endif %}       </center>
+<!--<a href="{% url 'book:home' %}">Link to home page</a><br>-->
+<!--<a href="{% url 'students:register' %}">Link to register page</a><br>-->
+<!--<a href="{% url 'students:login' %}">Link to login page</a><br>-->
+<!--<a href="{% url 'book:view' %}">Link to view book page</a><br>-->
+<!--<a href="{% url 'book:add' %}">Link to add books page</a><br>-->
+
+{% endblock %}
+</body>
+</html>

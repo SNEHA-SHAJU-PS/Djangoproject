@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fact(){
+        var num=document.getElementById("n").value;         //by id
+        var f=1;
+        for(i=1;i<=num;i++){
+        f=f*i;
+        }
+        document.getElementById('a').value=f;
+        }
+    </script>
+</head>
+<body>
+<center>
+    <div style="background-color:pink;height:400px;width:400px;padding:20px;">
+        <label>number</label>
+        <input type="text" id="n">
+        <br>
+         <input type="button" onclick="fact()" value="factorial">
+         <input type="text" id="a">
+
+    </div>
+</center>
+
+</body>
+</html>
